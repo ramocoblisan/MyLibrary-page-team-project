@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="header">
+        <section class="header-section">
+          <div class="container header-container">
+            <div class="header-division">
+              <a href="./index.html" class="header-logo logo">
+                <svg class="header-logo-icon">
+                  <use xlink:href="./symbol-defs.svg#icon-film"></use>
+                </svg>
+                Filmoteka
+              </a>
+              <nav class="header-nav">
+                <ul class="header-list">
+                  <li class="header-items">
+                    <button class="btn-nav home">
+                      <a href="./index.html" class="header-link text-nav">
+                        <svg class="nav-icon">
+                          <use xlink:href="./symbol-defs.svg#icon-home"></use>
+                        </svg>
+                        Home
+                      </a>
+                    </button>
+                  </li>
+                  <li class="header-items">
+                    <button class="btn-nav library">
+                      <a href="./mylibrary.html" class="header-link text-nav">
+                        <svg class="nav-icon">
+                          <use xlink:href="./symbol-defs.svg#icon-video-camera"></use>
+                        </svg>
+                        My library
+                      </a>
+                    </button>
+                  </li>
+                  <li class="header-items theme-btn">
+                    <button class="toggle-theme btn">
+                      <svg class="icon-theme-mode">
+                        <use
+                          xlink:href="./symbol-defs.svg#icon-sun"
+                          class="sun"
+                        ></use>
+                        <use
+                          xlink:href="./symbol-defs.svg#icon-moon"
+                          class="moon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mylibrary-btns"> 
+                <button class="button watched-btn">WATCHED</button>
+                <button class="button queue-btn active">QUEUE</button>
+            </div>
+            <div class="clear-btn-container">
+              <button class="clear-btn">CLEAR WATCHED LIST</button>
+            </div>
+          </div>
+        </section>
+      </header>
+    <section class="cards-section">
+      <div class="cards-container"></div>
+    </section>
+    <footer class="container footer">
+      <p class="copyright">
+        © 2024 | All Rights Reserved | Developed with
+        <svg class="footer-icon">
+          <use xlink:href="./symbol-defs.svg#icon-heart"></use>
+        </svg>
+        by GoIT Students
+      </p>
+    </footer>
+    <script type="module" src="./active-class.js"></script>
+    <script type="module" src="./theme-mode.js"></script>
+</body>
+</html>
